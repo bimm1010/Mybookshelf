@@ -1,0 +1,26 @@
+{% extends 'book/base.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="row">
+		
+		{% for item in products %}
+			<div class="col-lg-4">
+				<img class="thumbnail" src="{{ item.image.url }}">
+				<div class="box-element product">
+					<h6><strong>Tác Phẩm: {{ item.name }}</strong></h6>
+					<h6><strong>Tên Tác Giả: {{ item.nametg }}</strong></h6>
+					<h6><strong> Tình trạng: {{ item.status }}</strong></h6>
+					<hr>
+
+					<button class="..." >...</button>
+					<h4 style="display: inline-block; float: right;"><strong>{{ item.price|floatformat:3 }}vnd</strong></h4>
+
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock content %}
+
+
+
