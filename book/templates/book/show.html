@@ -6,7 +6,7 @@
 		
 		{% for item in products %}
 			<div class="col-lg-4">
-				<img class="thumbnail" src="{{ item.image.url }}">
+				<img class="thumbnail" src="{{ item.image.url }}" class="img-responsive" style="height: 200px; width: 200px; border-radius:50%" alt="Image of Caterers">
 				<div class="box-element product">
 					<h6><strong>Tác Phẩm: {{ item.name }}</strong></h6>
 					<h6><strong>Tên Tác Giả: {{ item.nametg }}</strong></h6>

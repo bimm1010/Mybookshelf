@@ -10,7 +10,7 @@ class Product(models.Model):
     nametg = models.CharField(max_length=200, null=True)
     price = models.FloatField()
     status = models.CharField(max_length=20, null=True)
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(upload_to="static/", null=True, blank=True,default='default.jfif')
     
     
 
